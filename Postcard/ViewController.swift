@@ -10,13 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
-    
     @IBOutlet weak var enterNameTextField: UITextField!
-    
-    @IBOutlet weak var enterMessageTextField: UITextField!
-    
+    @IBOutlet weak var enterMessageTextField: UITextField!    
     @IBOutlet weak var mailButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,13 +33,17 @@ class ViewController: UIViewController {
         // adding a comment here to test commits
         
         messageLabel.hidden = false
+        nameLabel.hidden = false
         
+        nameLabel.text = enterNameTextField.text
         messageLabel.text = enterMessageTextField.text
         
+        enterNameTextField.text = ""
         enterMessageTextField.text = ""
         
         enterMessageTextField.resignFirstResponder()
         
+        nameLabel.textColor = UIColor.blueColor()
         messageLabel.textColor = UIColor.redColor()
         
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
