@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var enterNameTextField: UITextField!
-    @IBOutlet weak var enterMessageTextField: UITextField!    
+    @IBOutlet weak var enterMessageTextField: UITextField!
     @IBOutlet weak var mailButton: UIButton!
     
     override func viewDidLoad() {
@@ -30,7 +30,14 @@ class ViewController: UIViewController {
         // Code will evaluate when we press the button
         //messageLabel.text = "Jeff Rac"
         
-        // adding a comment here to test commits
+        // How to commit changes to GitHub via Terminal
+        // Open Terminal
+        // cd to directory where project folder is i.e. Desktop
+        // cd to project folder - Postcard
+        // git add .
+        // git commit -m "comments"
+        // git push origin master
+        // user name, password
         
         messageLabel.hidden = false
         nameLabel.hidden = false
