@@ -31,6 +31,8 @@ class ViewController: UIViewController {
         // Code will evaluate when we press the button
         //messageLabel.text = "Jeff Rac"
         
+        // adding a comment here to test commits
+        
         messageLabel.hidden = false
         
         messageLabel.text = enterMessageTextField.text
